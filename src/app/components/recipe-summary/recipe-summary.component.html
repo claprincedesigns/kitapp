@@ -7,7 +7,12 @@
         <img src="{{ recipe.cover_photo ? recipe.cover_photo : '/assets/bowl-307839_1280.png'}}" 
         alt="Empty Image">
     </div>
-      
       <p>{{ recipe.description }}</p>
+      <div>
+        <div class="bold prep-time">Preparation Time:</div>
+        <div class="numbers">{{ recipe.preparation_time }}</div>
+        <div class="bold prep-time">Feeds this many:</div>
+        <div class="numbers">{{ recipe.feeds_this_many }}</div>
+      </div>
     </div>
   </div>
