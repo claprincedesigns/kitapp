@@ -1,0 +1,13 @@
+<div class="recipe card">
+    <div class="card-header">
+      <h3 class="card-title">{{ recipe.title }}</h3>
+    </div>
+    <div class="card-body">
+      <div class="cover-photo-holder">
+        <img src="{{ recipe.cover_photo ? recipe.cover_photo : '/assets/bowl-307839_1280.png'}}" 
+        alt="Empty Image">
+    </div>
+      
+      <p>{{ recipe.description }}</p>
+    </div>
+  </div>
