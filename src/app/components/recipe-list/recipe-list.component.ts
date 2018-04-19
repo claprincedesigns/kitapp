@@ -17,18 +17,18 @@ export class RecipeListComponent {
   constructor() {
     this.recipe_in_progress = Recipe.createBlank();
     this.recipes = [
-      new Recipe('Mac and Cheese',
+      new Recipe(-1, 'Mac and Cheese',
         'This a one of the best Mac and Cheese recipes! Other than the one that my grandmother made. Now that is the best!',
-        5, 45, null, null, null),
-      new Recipe('Fried Chicken',
+        5, 45, null, null, null, null),
+      new Recipe(-1, 'Fried Chicken',
         'This is a southern recipe that is a fan favorite of my family. I personally love me some fried chicken. Especially this one',
-        4, 20, null, null, null),
-      new Recipe('Banana Pudding',
+        4, 20, null, null, null, null),
+      new Recipe(-1, 'Banana Pudding',
         'I love love love love me some banana pudding. It\'s like the best comfort food, and it\'s always a hit at the family cookouts. ',
-        3, 30, null, null, null),
-      new Recipe('Southern Cabbage',
+        3, 30, null, null, null, null),
+      new Recipe(-1, 'Southern Cabbage',
         'I love love love love loooovvve cabbage. Especially with rice. I really love vegetables but cabbage is the winner.',
-        4, 10, null, null, null)
+        4, 10, null, null, null, null)
     ];
   }
 
