@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 import { Recipe } from '../../model/recipe';
 
@@ -8,8 +8,13 @@ import { Recipe } from '../../model/recipe';
   styleUrls: ['./recipe-summary.component.sass']
 })
 export class RecipeSummaryComponent {
-  @Input()
-  recipe: Recipe;
+  @Input() recipe: Recipe;
+
+  @Output() userClick: EventEmitter<number> = new EventEmitter();
 
   constructor() { }
+
+  userClicked() {
+    this.userClick.emit(this.recipe.id);
+  }
 }

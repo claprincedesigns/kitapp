@@ -46,5 +46,85 @@
         "keywords": [
             "Southern Comfort Food", "foodie", "southern", "holiday"
         ]
+    },
+    {
+        "id" : 2,
+        "title": "Southern Fried Chicken",
+        "description": "",
+        "feeds_this_many": 6,
+        "preparation_time": 35,
+        "ingredients": [
+            {"ingredient": "Whole chicken, cut into pieces", "measure": "3lbs"},
+            {"ingredient": "Vegetable Oil", "measure": "1qt"},
+            {"ingredient": "All purpose flour", "measure": "1cup"},
+            {"ingredient": "Salt", "measure": "Season to taste"},
+            {"ingredient": "Black Pepper", "measure": "Season to taste"},
+            {"ingredient": "Paprika", "measure": "1tsp"}
+        ],
+        "instructions":[
+            {"instruction": "Season chicken pieces with salt, pepper, and paprika. Roll in flour.", "photo": null},
+            {"instruction": "Add 1/2 to 3/4 inch oil to a large, heavy skillet.", "photo": null},
+            {"instruction": "Heat to approximately 365 degrees F (185 degrees C).", "photo": null},
+            {"instruction": "Place chicken pieces in hot oil.", "photo": null},
+            {"instruction": "Cover, and fry until golden, turning once, 15 to 20 minutes.", "photo": null},
+            {"instruction": "Drain on paper towels.", "photo": null}
+        ],
+        "cover_photo": null,
+        "keywords": [
+            "Southern Food", "foodie", "southern", "chicken"
+        ]
+    },
+    {
+        "id" : 3,
+        "title": "Banana Pudding",
+        "description": "",
+        "feeds_this_many": 9,
+        "preparation_time": 35,
+        "ingredients": [
+            {"ingredient": "Sugar", "measure": "3/4cup"},
+            {"ingredient": "2% Milk", "measure": "3cups"},
+            {"ingredient": "All purpose flour", "measure": "1/4cup"},
+            {"ingredient": "Salt", "measure": "1/4tsp"},
+            {"ingredient": "Large Eggs", "measure": "3"},
+            {"ingredient": "Vanilla Extract", "measure": "1-1/2tsp"},
+            {"ingredient": "Vanilla Wafers", "measure": "8oz"},
+            {"ingredient": "Ripe bananas, Cut in 1/4 inch slices", "measure": "4 large ripe bananas"}
+        ],
+        "instructions":[
+            {"instruction": "In a large saucepan, mix sugar, flour and salt. Whisk in milk.", "photo": null},
+            {"instruction": "Cook and stir over medium heat until thickened and bubbly. Reduce heat to low; cook and stir 2 minutes longer. Remove from heat.", "photo": null},
+            {"instruction": "In a small bowl, whisk eggs. Whisk a small amount of hot mixture into eggs; return all to pan, whisking constantly.", "photo": null},
+            {"instruction": "Bring to a gentle boil; cook and stir 2 minutes. Remove from heat. Stir in vanilla. Cool 15 minutes, stirring occasionally.", "photo": null},
+            {"instruction": "In an ungreased 8-in. square baking dish, layer 25 vanilla wafers, half of the banana slices and half of the pudding. Repeat layers.", "photo": null},
+            {"instruction": "Press plastic wrap onto surface of pudding. Refrigerate 4 hours or overnight.", "photo": null},
+            {"instruction": "Just before serving, remove wrap; crush remaining wafers and sprinkle over top.", "photo": null}
+        ],
+        "cover_photo": null,
+        "keywords": [
+            "Southern Food", "foodie", "southern", "banana pudding"
+        ]
+    },
+    {
+        "id" : 4,
+        "title": "Southern Cabbage",
+        "description": "",
+        "feeds_this_many": 6,
+        "preparation_time": 45,
+        "ingredients": [
+            {"ingredient": "Turkey Bacon", "measure": "4 slices cut in 1 inch pieces"},
+            {"ingredient": "Green Cabbage coarsely sliced", "measure": "2lbs"},
+            {"ingredient": "Small Onion, thinly sliced", "measure": "1"},
+            {"ingredient": "Salt", "measure": "1/2tsp"},
+            {"ingredient": "Water", "measure": "1/2 cup"}
+        ],
+        "instructions":[
+            {"instruction": "In a 5-quart dutch oven or 12-inch skillet over medium heat, cook bacon until browned.", "photo": null},
+            {"instruction": "Add cabbage, onion, salt; stir to coat cabbage evenly with bacon drippings.", "photo": null},
+            {"instruction": "Add water and reduce heat to medium-low; cover and cook 30 minutes, stirring occasionally, until cabbage is tender and lightly browned.", "photo": null}
+        ],
+        "cover_photo": null,
+        "keywords": [
+            "Southern Food", "foodie", "southern", "cabbage"
+        ]
     }
 ]

@@ -1,32 +1,7 @@
+<button class="addButton" (click)="addNewRecipe()">Add New Recipe</button>
+
 <h1>These are our recipes</h1>
 
-
 <app-recipe-summary *ngFor="let recipe of recipes"
-[recipe]="recipe">
+[recipe]="recipe" (userClick)="userClickedOnRecipe($event)">
 </app-recipe-summary>
-
-<!-- <div class="newrecipe card">
-    <div class="card-header">
-        <h4>Add New Recipe</h4>
-    </div>
-    <div class="card-body">
-        <div class="input-group">
-            <input type="text" class="form-control" [(ngModel)]="recipe_in_process.title" placeholder="Recipe Title" name="title">
-        </div>
-        <div class="input-group">
-            <textarea type="text" rows="5" class="form-control" placeholder="Recipe Description" [(ngModel)]="recipe_in_process.description" name="description"></textarea>
-        </div>
-        <div class="input-group">
-            <input type="text" class="form-control shorter-box" [(ngModel)]="recipe_in_process.feeds_this_many" placeholder="Feeds this many" name="feeds_this_many">
-            <span class="input-group-addon">People</span>
-        </div>
-        <div class="input-group">
-            <input type="text" class="form-control" [(ngModel)]="recipe_in_process.preparation_time"
-            placeholder="Preparation Time" name="preparation_time">
-            <span class="input-group-addon">Minutes</span>
-        </div>
-        <div class="input-group">
-            <input type="button" value="Add Recipe" (click)="addRecipeClicked()"/>
-        </div>
-    </div>
-</div> -->

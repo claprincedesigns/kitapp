@@ -39,6 +39,6 @@ export class Recipe {
     }
 
     public static createBlank() {
-        return new Recipe(-1, '', '', 1, 1, null, null, null, null);
+        return new Recipe(-1, '', '', 1, 1, [], [], null, null);
     }
 }

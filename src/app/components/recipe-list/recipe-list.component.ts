@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+
 import { Recipe } from '../../model/recipe';
+import { Router } from '@angular/router';
+import { RecipeService } from '../../services/recipe.service';
 
 
 @Component({
@@ -9,32 +12,29 @@ import { Recipe } from '../../model/recipe';
   styleUrls: ['./recipe-list.component.sass']
 })
 export class RecipeListComponent {
-
   recipes: Recipe[];
 
   recipe_in_progress: Recipe;
 
-  constructor() {
-    this.recipe_in_progress = Recipe.createBlank();
-    this.recipes = [
-      new Recipe(-1, 'Mac and Cheese',
-        'This a one of the best Mac and Cheese recipes! Other than the one that my grandmother made. Now that is the best!',
-        5, 45, null, null, null, null),
-      new Recipe(-1, 'Fried Chicken',
-        'This is a southern recipe that is a fan favorite of my family. I personally love me some fried chicken. Especially this one',
-        4, 20, null, null, null, null),
-      new Recipe(-1, 'Banana Pudding',
-        'I love love love love me some banana pudding. It\'s like the best comfort food, and it\'s always a hit at the family cookouts. ',
-        3, 30, null, null, null, null),
-      new Recipe(-1, 'Southern Cabbage',
-        'I love love love love loooovvve cabbage. Especially with rice. I really love vegetables but cabbage is the winner.',
-        4, 10, null, null, null, null)
-    ];
+  constructor(private router: Router,
+    private recipe_service: RecipeService) {
   }
 
+  ngOnInIt() {
+    this.recipe_service.getAllRecipes()
+    .then((recipes) => this.recipes = recipes);
+  }
   public addRecipeClicked() {
     console.log(JSON.stringify(this.recipe_in_progress, null, 2));
     this.recipes.unshift(this.recipe_in_progress);
     this.recipe_in_progress = Recipe.createBlank();
+  }
+
+  userClickedOnRecipe(recipe_id): void {
+    this.router.navigateByUrl('/recipes/' + recipe_id);
+  }
+
+  addNewRecipe(): void {
+    this.router.navigateByUrl('/editnewrecipe');
   }
 }
